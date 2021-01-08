@@ -18,10 +18,10 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
-app.use(express.static(path.join('', 'bin')));
+app.use(express.static(path.join(__dirname, 'bin')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join('', 'bin/index.html'))
+    res.sendFile(path.join(__dirname, 'bin/index.html'))
 });
 
 app.get('/', (req, res) => {
