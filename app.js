@@ -18,6 +18,9 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
+const port = process.env.Port || 8080;
+
+
 app.use(express.static(path.join(__dirname, 'bin')));
 
 app.get('*', (req, res) => {
@@ -28,6 +31,6 @@ app.get('/', (req, res) => {
     res.send("Hellow World");
 });
 
-app.listen(8080, () => {
-    console.log("Server It's Working")
+app.listen(port, () => {
+    console.log("Server It's Working port: " + port)
 });
