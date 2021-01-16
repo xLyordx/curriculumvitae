@@ -1,0 +1,35 @@
+.head {
+    background-color: burlywood;
+    height: 10vh;
+    width: 100%;
+    float: left;
+}
+
+.navi {
+    background-color: blanchedalmond;
+    width: 20%;
+    height: 83vh;
+    float: left;
+}
+
+.navi .item {
+    background-color: rgb(250, 206, 140);
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.ContentPpal {
+    background-color: blanchedalmond;
+    width: 80%;
+    height: 83vh;
+    float: left;
+}
+
+.foot {
+    background-color: burlywood;
+    height: 5vh;
+    width: 100%;
+    float: left;
+}

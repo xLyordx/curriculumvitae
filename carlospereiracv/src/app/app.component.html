@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<header class="head"></header>
+<nav class="navi">
+    <a class="item" [routerLink]="['/Home']" [routerLinkActive]="['actual']">Home</a>
+    <a class="item" [routerLink]="['/Education']" [routerLinkActive]="['actual']">Education</a> &nbsp;
+</nav>
+<section class="ContentPpal">
+    <router-outlet></router-outlet>
+</section>
+<footer class="foot"></footer>
