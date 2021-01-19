@@ -1,35 +1,36 @@
 .head {
+    text-align: center;
     background-color: burlywood;
     height: 10vh;
-    width: 100%;
-    float: left;
 }
 
 .navi {
-    background-color: blanchedalmond;
-    width: 20%;
-    height: 83vh;
-    float: left;
+    background-color: rgb(255, 213, 205);
+    height: 5vh;
 }
 
 .navi .item {
     background-color: rgb(250, 206, 140);
-    margin: 10px 0px 10px 0px;
-    padding: 10px;
-    display: block;
+    margin: 0px 5px 0px 5px;
     text-align: center;
 }
 
 .ContentPpal {
     background-color: blanchedalmond;
-    width: 80%;
-    height: 83vh;
-    float: left;
+    height: 80vh;
 }
 
 .foot {
     background-color: burlywood;
     height: 5vh;
-    width: 100%;
-    float: left;
+}
+
+.bgred {
+    background-color: crimson;
+    border: 1px solid black;
+}
+
+.bggreen {
+    background-color: rgb(149, 240, 107);
+    border: 1px solid black;
 }
