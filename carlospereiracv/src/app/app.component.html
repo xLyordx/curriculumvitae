@@ -15,13 +15,7 @@
 
     <nav class="fila">
         <div class="navi col-lg-12 col-md-12 col-sm-0">
-            <a class="item col-lg-1 col-md-1 col-sm-0" [routerLink]="['/Home']" [routerLinkActive]="['actual']" title="Profile">Profile</a>
-            <a class="item col-lg-1 col-md-1 col-sm-0" [routerLink]="['/Education']" [routerLinkActive]="['actual']">Education</a>
-            <a class="item col-lg-1 col-md-1 col-sm-0" [routerLink]="['/WorkExp']" [routerLinkActive]="['actual']">Work Experience</a>
-            <a class="item col-lg-1 col-md-1 col-sm-0" [routerLink]="['/PersInfo']" [routerLinkActive]="['actual']" title="Personal Informatión">Per. Informatión</a>
-            <a class="item col-lg-1 col-md-1 col-sm-0" [routerLink]="['/Skills']" [routerLinkActive]="['actual']">Skills</a>
-            <a class="item col-lg-1 col-md-1 col-sm-0" [routerLink]="['/Languages']" [routerLinkActive]="['actual']">Languages</a>
-            <a class="item col-lg-1 col-md-1 col-sm-0" [routerLink]="['/References']" [routerLinkActive]="['actual']">References</a>
+            <a *ngFor="let menu of menusApp" class=" item {{menu._colDis}} " [routerLink]="[menu._route]" [routerLinkActive]="['actual']" title="{{menu._hint}}">{{menu._tag}}</a>
         </div>
     </nav>
 

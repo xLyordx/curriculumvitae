@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { menus } from './Models/configuration.en';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'carlospereiracv';
+  public title = 'carlospereiracv';
+  public menusApp = menus; 
+
+  ngOnInit(): void {
+    console.log(this.menusApp);
+  }
 }
