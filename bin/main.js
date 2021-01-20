@@ -71,6 +71,32 @@ class WorkExp {
 
 /***/ }),
 
+/***/ "8QgI":
+/*!*************************************!*\
+  !*** ./src/app/Models/Reference.ts ***!
+  \*************************************/
+/*! exports provided: Reference */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Reference", function() { return Reference; });
+class Reference {
+    constructor(_type, _fullName, _relation, _ocupation, _educationEntity, _company, _telephone) {
+        this._type = _type;
+        this._fullName = _fullName;
+        this._relation = _relation;
+        this._ocupation = _ocupation;
+        this._educationEntity = _educationEntity;
+        this._company = _company;
+        this._telephone = _telephone;
+    }
+    ;
+}
+
+
+/***/ }),
+
 /***/ "9vUh":
 /*!****************************************!*\
   !*** ./src/app/home/home.component.ts ***!
@@ -202,7 +228,7 @@ EducationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
 /*!********************************************!*\
   !*** ./src/app/Models/configuration.en.ts ***!
   \********************************************/
-/*! exports provided: menus, perfil, educations, workExps, persInfo */
+/*! exports provided: menus, perfil, educations, workExps, persInfo, skills, Languages, References */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -212,9 +238,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "educations", function() { return educations; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "workExps", function() { return workExps; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "persInfo", function() { return persInfo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skills", function() { return skills; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Languages", function() { return Languages; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "References", function() { return References; });
 /* harmony import */ var _WorkExp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WorkExp */ "1Anl");
 /* harmony import */ var _Education__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Education */ "JRDz");
 /* harmony import */ var _Menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Menu */ "fNMM");
+/* harmony import */ var _Language__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Language */ "jo/h");
+/* harmony import */ var _Reference__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Reference */ "8QgI");
+
+
 
 
 
@@ -235,7 +268,7 @@ var educations = [
     new _Education__WEBPACK_IMPORTED_MODULE_1__["Education"]("System Engineer", "Universidad Industrial de Santander", "Bucaramanga", "./../../assets/collegeLogo.png", "4.06", "")
 ];
 var workExps = [
-    new _WorkExp__WEBPACK_IMPORTED_MODULE_0__["WorkExp"](new Date, new Date, "", "./../../assets/companyLogo.png", "")
+    new _WorkExp__WEBPACK_IMPORTED_MODULE_0__["WorkExp"](new Date(2017, 4, 17), new Date(2020, 6, 31), "SyC S.A", "./../../assets/companyLogo.png", "Software development Engineer, Experience as Back-end developer in .Net (C#, vb.Net, Java) with high Front-end domain inHTML,CSS, JavaScript, jQuery, Ajax, BootStrap. My duties include design and implemententity-relationship models for structuring information, create stored procedures that meetperformance standards inSQL Server, and structure and codify business rules, for the correctflow of requests, support and update a website developed in Java, JDeveloper and WebLogic, and support and update desktop software in windows form.")
 ];
 var persInfo = {
     id: "C.C. 1098755547",
@@ -247,6 +280,24 @@ var persInfo = {
     city: "Piedecuesta, Santander",
     ProLic: "68255-357368 STD"
 };
+var skills = {
+    devSof: ["Microsoft Visual Studio", "Visual Studio Code", "Sql Server Management Studio", "Eclipse", "NetBeans", "JDeveloper Oracle"],
+    progLan: ["C#", "C++", "vb.Net", "Java", "Python"],
+    front: ["JavaScript", "TypeScript", "HTML", "CSS", "Jquery", "BootStrap", "Ajax", "Angular"],
+    back: ["WebForms", "API REST Java", "ExpressJs"],
+    packMan: ["Apache Maven", "Node Js"],
+    database: ["SqlServer Transact-SQL", "MongoDB", "Postgress", "Mysql", "Sybase"],
+    officeTools: ["Microsoft Excel", "Microsoft Word", "Microsoft Power Point"]
+};
+var Languages = [
+    new _Language__WEBPACK_IMPORTED_MODULE_3__["Language"]("English", "B1"),
+    new _Language__WEBPACK_IMPORTED_MODULE_3__["Language"]("Spanish", "Native")
+];
+var References = [
+    new _Reference__WEBPACK_IMPORTED_MODULE_4__["Reference"]("Personal", "Isidro Pereira Morillo", "Father", "Home Seller", "", "Independent Worker", "3158945775"),
+    new _Reference__WEBPACK_IMPORTED_MODULE_4__["Reference"]("Laboral", "Nelson Enrique Leon", "Coworker", "Master’s degree in Systems Engineering", "Universidad Industrial de Santander", "SyC S.A", "3118705597"),
+    new _Reference__WEBPACK_IMPORTED_MODULE_4__["Reference"]("Laboral", "Sergio Andrés Tovar Durán", "Coworker", "Electronic Engineer", "Universidad Industrial de Santander", "Rockwell Automation", "3184307473")
+];
 
 
 /***/ }),
@@ -570,6 +621,27 @@ class Menu {
         this._hint = _hint;
         this._tag = _tag;
         this._colDis = _colDis;
+    }
+    ;
+}
+
+
+/***/ }),
+
+/***/ "jo/h":
+/*!************************************!*\
+  !*** ./src/app/Models/Language.ts ***!
+  \************************************/
+/*! exports provided: Language */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Language", function() { return Language; });
+class Language {
+    constructor(_language, _level) {
+        this._language = _language;
+        this._level = _level;
     }
     ;
 }
