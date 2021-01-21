@@ -43,18 +43,19 @@ export var persInfo = {
     birthDate: "10 June 1994",
     cellphone: "317-684-1810",
     email: "ing.carlosandrespereiragrimald@gmail.com",
-    addres: "Cra 2 Cl 6 Urb. Buenos Aires",
+    address: "Cra 2 Cl 6 Urb. Buenos Aires Mz H house 16",
     city: "Piedecuesta, Santander",
-    ProLic: "68255-357368 STD"
+    proLic: "68255-357368 STD"
 };
 
 export var skills = {
-    devSof: ["Microsoft Visual Studio", "Visual Studio Code", "Sql Server Management Studio", "Eclipse", "NetBeans", "JDeveloper Oracle"],
-    progLan: ["C#", "C++", "vb.Net", "Java", "Python"],
+    devSof: ["Microsoft Visual Studio", "Visual Studio Code With SSH Remote Station", "Sql Server Management Studio", "Eclipse", "NetBeans","Android Studio", "JDeveloper Oracle","Node.js"],
+    progLan: ["C#", "C++", "vb.Net", "Java", "Python","Kotlin"],
     front: ["JavaScript", "TypeScript", "HTML", "CSS", "Jquery", "BootStrap", "Ajax", "Angular"],
     back: ["WebForms", "API REST Java", "ExpressJs"],
-    packMan: ["Apache Maven", "Node Js"],
+    packMan: ["Apache Maven", "NPM", "Nuget"],
     database: ["SqlServer Transact-SQL", "MongoDB", "Postgress", "Mysql", "Sybase"],
+    cidi: ["Git","DevOps","Jersey","Team Foundation Control Versión"],
     officeTools: ["Microsoft Excel", "Microsoft Word", "Microsoft Power Point"]
 };
 
