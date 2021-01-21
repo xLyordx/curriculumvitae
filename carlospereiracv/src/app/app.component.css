@@ -13,11 +13,13 @@
     background-color: rgb(250, 206, 140);
     margin: 0px 5px 0px 5px;
     text-align: center;
+    text-decoration: none;
 }
 
 .ContentPpal {
     background-color: blanchedalmond;
     height: 80vh;
+    overflow: auto;
 }
 
 .foot {
@@ -33,4 +35,14 @@
 .bggreen {
     background-color: rgb(149, 240, 107);
     border: 1px solid black;
+}
+
+.actual {
+    text-decoration: none;
+    background-color: coral !important;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }

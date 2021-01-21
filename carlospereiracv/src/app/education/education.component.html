@@ -1,1 +1,31 @@
-<p>education works!</p>
+<section *ngFor="let edu of edus" class="fila">
+    <div class="col-lg-2"></div>
+    <div class="eduBox col-lg-8">
+        <section class="fila">
+            <div class="col-lg-2"></div>
+            <label for="duration" class="col-lg-1">Duration:</label>
+            <div class="col-lg-3">{{edu._startYear}} - {{edu._endYear}}</div>
+            <label for="duration" class="col-lg-1">Career:</label>
+            <div class="col-lg-3"><strong>{{edu._career}}</strong></div>
+            <div class="col-lg-2"></div>
+        </section>
+        <section class="fila">
+            <div class="col-lg-2"></div>
+            <label for="duration" class="col-lg-1">Logo:</label>
+            <div class="col-lg-3">
+                <img width="100" height="100" src="{{edu._collegeLogo}}" alt="collegeLogo">
+            </div>
+            <label for="duration" class="col-lg-1">College Data:</label>
+            <div class="col-lg-3">{{edu._college}}, {{edu._collegeLocation}}</div>
+            <div class="col-lg-2"></div>
+        </section>
+
+        <section class="fila">
+            <div class="col-lg-2"></div>
+            <label for="duration" class="col-lg-1">GPA:</label>
+            <div class="col-lg-7"><strong>{{edu._GPA}}</strong></div>
+            <div class="col-lg-2"></div>
+        </section>
+    </div>
+    <div class="col-lg-2"></div>
+</section>

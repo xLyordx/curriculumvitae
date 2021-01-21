@@ -6,7 +6,9 @@ export class Education{
         public _collegeLocation: string,
         public _collegeLogo: string,
         public _GPA: string,
-        public _distintions: string
+        public _distintions: string,
+        public _startYear: string,
+        public _endYear: string
         ){
         
     }
