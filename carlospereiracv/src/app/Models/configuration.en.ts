@@ -11,7 +11,8 @@ export var menus = [
     new Menu("PersInfo", "Personal Info", "Personal Info", "col-lg-1 col-md-1 col-sm-0"),
     new Menu("Skills", "Skills", "Skills", "col-lg-1 col-md-1 col-sm-0"),
     new Menu("Languages", "Languages", "Languages", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("References", "References", "References", "col-lg-1 col-md-1 col-sm-0")
+    new Menu("References", "References", "References", "col-lg-1 col-md-1 col-sm-0"),
+    new Menu("Annexes", "Annexes", "Annexes", "col-lg-1 col-md-1 col-sm-0")
 ];
 
 export var perfil = {
@@ -60,7 +61,7 @@ export var skills = {
 };
 
 export var Languages = [
-    new Language("English", "B1"),
+    new Language("English", "B2"),
     new Language("Spanish", "Native")
 ];
 

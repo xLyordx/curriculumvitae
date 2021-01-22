@@ -7,6 +7,7 @@ import { PersonalinfoComponent } from './personalinfo/personalinfo.component';
 import { SkillsComponent } from './skills/skills.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { ReferencesComponent } from './references/references.component';
+import { AnnexesComponent } from './annexes/annexes.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'Skills', component: SkillsComponent },
   { path: 'Languages', component: LanguagesComponent },
   { path: 'References', component: ReferencesComponent },
+  { path: 'Annexes', component: AnnexesComponent },
   { path: '**', component: HomeComponent }  
 ];
 

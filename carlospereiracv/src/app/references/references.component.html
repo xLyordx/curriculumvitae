@@ -1,1 +1,16 @@
-<p>references works!</p>
+<section *ngFor="let ref of refs" class="fila">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        <section class="fila">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">{{ref._type}} Reference ({{ref._relation}})</div>
+            <div class="col-lg-6"><b>{{ref._fullName}}</b>,
+                <span *ngIf="ref._ocupation">{{ref._ocupation}},  </span>
+                <span *ngIf="ref._educationEntity">{{ref._educationEntity}},  </span>
+                <span *ngIf="ref._company">{{ref._company}},  </span>
+                <span *ngIf="ref._telephone">{{ref._telephone}}  </span>
+            </div>
+            <div class="col-lg-2"></div>
+        </section>
+    </div>
+</section>

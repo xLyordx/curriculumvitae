@@ -10,6 +10,7 @@ import { PersonalinfoComponent } from './personalinfo/personalinfo.component';
 import { SkillsComponent } from './skills/skills.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { ReferencesComponent } from './references/references.component';
+import { AnnexesComponent } from './annexes/annexes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReferencesComponent } from './references/references.component';
     PersonalinfoComponent,
     SkillsComponent,
     LanguagesComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    AnnexesComponent
   ],
   imports: [
     BrowserModule,

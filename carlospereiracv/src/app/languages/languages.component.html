@@ -1,1 +1,13 @@
-<p>languages works!</p>
+<section *ngFor="let lang of langs" class="fila">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        <section class="fila">
+            <div class="col-lg-2"></div>
+            <label for="duration" class="col-lg-1">Language:</label>
+            <div class="col-lg-3">{{lang._language}}</div>
+            <label for="duration" class="col-lg-1">Level:</label>
+            <div class="col-lg-3"><strong>{{lang._level}}</strong></div>
+            <div class="col-lg-2"></div>
+        </section>
+    </div>
+</section>
