@@ -12,6 +12,14 @@ import { LanguagesComponent } from './languages/languages.component';
 import { ReferencesComponent } from './references/references.component';
 import { AnnexesComponent } from './annexes/annexes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule} from './material/material.module';
+import { NavComponent } from './nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list'
 
 @NgModule({
   declarations: [
@@ -23,12 +31,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SkillsComponent,
     LanguagesComponent,
     ReferencesComponent,
-    AnnexesComponent    
+    AnnexesComponent,
+    NavComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

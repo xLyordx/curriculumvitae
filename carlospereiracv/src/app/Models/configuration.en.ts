@@ -5,14 +5,14 @@ import { Language } from './Language';
 import { Reference } from './Reference';
 
 export var menus = [
-    new Menu("Home", "Profile", "Profile", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("Education", "Education", "Education", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("WorkExp", "Work Experience", "Work Experience", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("PersInfo", "Personal Info", "Personal Info", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("Skills", "Skills", "Skills", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("Languages", "Languages", "Languages", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("References", "References", "References", "col-lg-1 col-md-1 col-sm-0"),
-    new Menu("Annexes", "Annexes", "Annexes", "col-lg-1 col-md-1 col-sm-0")
+    new Menu("Home", "Profile", "Profile", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("Education", "Education", "Education", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("WorkExp", "Work Experience", "Work Experience", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("PersInfo", "Personal Info", "Personal Info", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("Skills", "Skills", "Skills", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("Languages", "Languages", "Languages", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("References", "References", "References", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("Annexes", "Annexes", "Annexes", "col-lg-12 col-md-12 col-sm-12 col-xs-12")
 ];
 
 export var perfil = {
