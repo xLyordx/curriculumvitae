@@ -11,6 +11,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { ReferencesComponent } from './references/references.component';
 import { AnnexesComponent } from './annexes/annexes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,13 @@ import { AnnexesComponent } from './annexes/annexes.component';
     SkillsComponent,
     LanguagesComponent,
     ReferencesComponent,
-    AnnexesComponent
+    AnnexesComponent,
+    BrowserAnimationsModule
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
