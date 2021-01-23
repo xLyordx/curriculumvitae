@@ -23,8 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SkillsComponent,
     LanguagesComponent,
     ReferencesComponent,
-    AnnexesComponent,
-    BrowserAnimationsModule
+    AnnexesComponent    
   ],
   imports: [
     BrowserModule,
