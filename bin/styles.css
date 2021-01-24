@@ -79,6 +79,25 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg)
     .col-lg-0 {
         display: none;
     }
+    .fn-lg-14 {
+        font-size: 14px !important;
+    }
+    .fn-lg-16 {
+        font-size: 16px !important;
+        line-height: 1.25;
+    }
+    .fn-lg-18 {
+        font-size: 18px !important;
+        line-height: 1.5;
+    }
+    .fn-lg-20 {
+        font-size: 20px !important;
+        line-height: 1.5;
+    }
+    .fn-lg-22 {
+        font-size: 22px !important;
+        line-height: 2;
+    }
 }
 
 /*==========================================================================
@@ -124,6 +143,25 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md)
     }
     .col-md-0 {
         display: none;
+    }
+    .fn-md-14 {
+        font-size: 14px !important;
+    }
+    .fn-md-16 {
+        font-size: 16px !important;
+        line-height: 1.25;
+    }
+    .fn-md-18 {
+        font-size: 18px !important;
+        line-height: 1.5;
+    }
+    .fn-md-20 {
+        font-size: 20px !important;
+        line-height: 1.5;
+    }
+    .fn-md-22 {
+        font-size: 22px !important;
+        line-height: 2;
     }
 }
 
@@ -171,6 +209,25 @@ PANTALLA DE TABLET - SMALL (sm)
     .col-sm-0 {
         display: none;
     }
+    .fn-sm-14 {
+        font-size: 14px !important;
+    }
+    .fn-sm-16 {
+        font-size: 16px !important;
+        line-height: 1.25;
+    }
+    .fn-sm-18 {
+        font-size: 18px !important;
+        line-height: 1.5;
+    }
+    .fn-sm-20 {
+        font-size: 20px !important;
+        line-height: 1.5;
+    }
+    .fn-sm-22 {
+        font-size: 22px !important;
+        line-height: 2;
+    }
 }
 
 /*==========================================================================
@@ -217,11 +274,35 @@ PANTALLA DE TELEFONOS - EXTRA SMALL (xs)
     .col-xs-0 {
         display: none;
     }
+    .fn-xs-14 {
+        font-size: 14px !important;
+    }
+    .fn-xs-16 {
+        font-size: 16px !important;
+        line-height: 1.25;
+    }
+    .fn-xs-18 {
+        font-size: 18px !important;
+        line-height: 1.5;
+    }
+    .fn-xs-20 {
+        font-size: 20px !important;
+        line-height: 1.5;
+    }
+    .fn-xs-22 {
+        font-size: 22px !important;
+        line-height: 2;
+    }
 }
 
-html, body { height: 100%; }
+html,
+body {
+    height: 100%;
+}
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 /*# sourceMappingURL=styles.css.map*/
