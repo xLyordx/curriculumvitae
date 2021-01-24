@@ -26,23 +26,3 @@
     background-color: burlywood;
     height: 5vh;
 }
-
-.bgred {
-    background-color: crimson;
-    border: 1px solid black;
-}
-
-.bggreen {
-    background-color: rgb(149, 240, 107);
-    border: 1px solid black;
-}
-
-.actual {
-    text-decoration: none;
-    background-color: coral !important;
-    color: white;
-    border-radius: 5px 5px 0px 0px;
-    padding: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
