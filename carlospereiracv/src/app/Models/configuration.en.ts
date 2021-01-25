@@ -5,10 +5,9 @@ import { Language } from './Language';
 import { Reference } from './Reference';
 
 export var menus = [
-    new Menu("Home", "Profile", "Profile", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("Home", "Home", "Home", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
     new Menu("Education", "Education", "Education", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
-    new Menu("WorkExp", "Work Experience", "Work Experience", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
-    new Menu("PersInfo", "Personal Info", "Personal Info", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
+    new Menu("WorkExp", "Work Experience", "Work Experience", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),    
     new Menu("Skills", "Skills", "Skills", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
     new Menu("Languages", "Languages", "Languages", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
     new Menu("References", "References", "References", "col-lg-12 col-md-12 col-sm-12 col-xs-12"),
@@ -39,6 +38,7 @@ export var workExps = [
 ];
 
 export var persInfo = {
+    title: "Personal Information",
     id: "C.C. 1098755547",
     idPlaceExp: "Bucaramanga",
     birthDate: "10 June 1994",

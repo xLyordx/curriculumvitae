@@ -16,8 +16,8 @@
     right: 10px;
 }
 
-.dashboard-card-content {
-    text-align: center;
+.dashboard-card.mat-card {
+    overflow: hidden;
 }
 
 .dashboard-card-content p {

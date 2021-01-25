@@ -23,7 +23,6 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-import { ProfileComponent } from './profile/profile.component'
 
 @NgModule({
   declarations: [
@@ -36,8 +35,7 @@ import { ProfileComponent } from './profile/profile.component'
     LanguagesComponent,
     ReferencesComponent,
     AnnexesComponent,
-    NavComponent,
-    ProfileComponent    
+    NavComponent    
   ],
   imports: [
     BrowserModule,

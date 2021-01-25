@@ -15,11 +15,17 @@
                         <div [ngClass]="{'containImg col-lg-3 col-md-4 col-sm-4 col-xs-12': card.image} " *ngIf="card.image ">
                             <img class="imageSize" src="{{card.image}} " alt="foto tarjeta ">
                         </div>
-                        <div id="p{{idx}}" [ngClass]="{ 'fn-lg-20 col-lg-9 fn-md-18 col-md-8 col-sm-8 col-xs-0': card.image} ">
-                            <p>
+                        <div id="p{{idx}}" [ngClass]="{' col-lg-9 col-md-8 col-sm-8 col-xs-0': card.image,
+                            'col-lg-12 col-md-12 col-sm-12 col-xs-12': !card.image
+                            } ">
+                            <p *ngIf="card.tag == ''" class="fn-lg-20 fn-md-18">
                                 {{card.content}}
                             </p>
+                            <app-personalinfo class="fn-md-14" *ngIf="card.tag == 'persInfo'"></app-personalinfo>
+                            <app-skills *ngIf="card.tag == 'skill'"></app-skills>
+                            <app-languages *ngIf="card.tag == 'lang'"></app-languages>
                         </div>
+
                     </div>
 
                 </mat-card-content>

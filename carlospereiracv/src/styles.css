@@ -78,6 +78,12 @@ PANTALLA DE ESCRITORIO GRANDE - LARGE (lg)
     .col-lg-0 {
         display: none;
     }
+    .fn-lg-10 {
+        font-size: 10px !important;
+    }
+    .fn-lg-12 {
+        font-size: 12px !important;
+    }
     .fn-lg-14 {
         font-size: 14px !important;
     }
@@ -143,6 +149,12 @@ PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md)
     }
     .col-md-0 {
         display: none;
+    }
+    .fn-md-10 {
+        font-size: 10px !important;
+    }
+    .fn-md-12 {
+        font-size: 12px !important;
     }
     .fn-md-14 {
         font-size: 14px !important;
@@ -210,6 +222,12 @@ PANTALLA DE TABLET - SMALL (sm)
     .col-sm-0 {
         display: none;
     }
+    .fn-sm-10 {
+        font-size: 10px !important;
+    }
+    .fn-sm-12 {
+        font-size: 12px !important;
+    }
     .fn-sm-14 {
         font-size: 14px !important;
     }
@@ -275,6 +293,12 @@ PANTALLA DE TELEFONOS - EXTRA SMALL (xs)
     }
     .col-xs-0 {
         display: none;
+    }
+    .fn-xs-10 {
+        font-size: 10px !important;
+    }
+    .fn-xs-12 {
+        font-size: 12px !important;
     }
     .fn-xs-14 {
         font-size: 14px !important;
