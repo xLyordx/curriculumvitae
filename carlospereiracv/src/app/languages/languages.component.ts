@@ -9,7 +9,7 @@ import { Languages } from './../Models/configuration.en'
 })
 export class LanguagesComponent implements OnInit {
 
-  public langs: Language[] = Languages;
+  public langs: Language[] = Languages.data;
 
   constructor() { }
 

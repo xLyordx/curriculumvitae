@@ -1,29 +1,49 @@
-<div class="grid-container">
-    <mat-grid-list cols="2" rowHeight="350px">
-        <mat-grid-tile *ngFor="let card of cards | async;let idx=index" [colspan]="card.cols" [rowspan]="card.rows">
-            <mat-card class="dashboard-card">
+<div class="fila contentBox">
+    <section *ngFor="let card of cards;let idx=index" class="itemCard" [ngClass]="card.class">
+        <div class="CustomCard">
+            <header class="CardTitle fn-lg-20 fn-md-20 fn-sm-20 fn-xs-20">{{card.title}}</header>
+            <section class="cardContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div *ngIf="card.tag=='profile' ">
+                    <div [ngClass]="{ 'containImg col-lg-3 col-md-4 col-sm-12 col-xs-12': card.image} " *ngIf="card.image ">
+                        <img class="imageSize " src="{{card.image}} " alt="foto tarjeta ">
+                    </div>
+                    <div id="p{{idx}}" [ngClass]="{ ' col-lg-9 col-md-8 col-sm-12 col-xs-12': card.image, 'col-lg-12 col-md-12 col-sm-12 col-xs-12': !card.image } ">
+                        <p class="fn-lg-20 fn-md-18 ">
+                            {{card.content}}
+                        </p>
+                    </div>
+                </div>
+                <app-personalinfo *ngIf="card.tag=='persInfo' "></app-personalinfo>
+                <app-skills *ngIf="card.tag=='skill' "></app-skills>
+                <app-languages *ngIf="card.tag=='lang' "></app-languages>
+            </section>
+        </div>
+    </section>
+</div>
+
+
+
+
+<!-- <mat-grid-list cols="2 " rowHeight="350px ">
+        <mat-grid-tile *ngFor="let card of cards | async;let idx=index " [colspan]="card.cols " [rowspan]="card.rows ">
+            <mat-card id="card{{idx}} " class="dashboard-card ">
                 <mat-card-header>
                     <mat-card-title>
                         {{card.title}}
-                        <button mat-icon-button (click)="toggle(card,'p' +idx);" class=" more-button " aria-label="Toggle menu ">
-              <mat-icon>open_in_new</mat-icon>
-            </button>
                     </mat-card-title>
                 </mat-card-header>
                 <mat-card-content class="dashboard-card-content ">
                     <div [class.fila]="card.image ">
-                        <div [ngClass]="{'containImg col-lg-3 col-md-4 col-sm-4 col-xs-12': card.image} " *ngIf="card.image ">
-                            <img class="imageSize" src="{{card.image}} " alt="foto tarjeta ">
+                        <div [ngClass]="{ 'containImg col-lg-3 col-md-4 col-sm-12 col-xs-12': card.image} " *ngIf="card.image ">
+                            <img class="imageSize " src="{{card.image}} " alt="foto tarjeta ">
                         </div>
-                        <div id="p{{idx}}" [ngClass]="{' col-lg-9 col-md-8 col-sm-8 col-xs-0': card.image,
-                            'col-lg-12 col-md-12 col-sm-12 col-xs-12': !card.image
-                            } ">
-                            <p *ngIf="card.tag == ''" class="fn-lg-20 fn-md-18">
+                        <div id="p{{idx}} " [ngClass]="{ ' col-lg-9 col-md-8 col-sm-12 col-xs-12': card.image, 'col-lg-12 col-md-12 col-sm-12 col-xs-12': !card.image } ">
+                            <p *ngIf="card.tag=='' " class="fn-lg-20 fn-md-18 ">
                                 {{card.content}}
                             </p>
-                            <app-personalinfo class="fn-md-14" *ngIf="card.tag == 'persInfo'"></app-personalinfo>
-                            <app-skills *ngIf="card.tag == 'skill'"></app-skills>
-                            <app-languages *ngIf="card.tag == 'lang'"></app-languages>
+                            <app-personalinfo class="fn-md-14 " *ngIf="card.tag=='persInfo' "></app-personalinfo>
+                            <app-skills *ngIf="card.tag=='skill' "></app-skills>
+                            <app-languages *ngIf="card.tag=='lang' "></app-languages>
                         </div>
 
                     </div>
@@ -31,5 +51,4 @@
                 </mat-card-content>
             </mat-card>
         </mat-grid-tile>
-    </mat-grid-list>
-</div>
+    </mat-grid-list> -->
