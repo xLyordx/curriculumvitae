@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { perfil, persInfo, Languages, skills } from './../Models/configuration.en';
@@ -10,7 +10,7 @@ import { gFuncs } from './../Models/globalFuntions';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent  {
 
   public prof: any = perfil;
   public per: any = persInfo;
@@ -23,6 +23,17 @@ export class HomeComponent {
     { title: this.per.title, class:'col-lg-6 col-md-6 col-sm-12 col-xs-12', content: '', tag: 'persInfo', expanded: false },
     { title: this.lang.title, class:'col-lg-6 col-md-6 col-sm-12 col-xs-12', content: '', tag: 'lang', expanded: false }
   ];
+
+  presentation(): void {    
+    let isOk = false;
+    let value = localStorage.getItem("visited");
+    console.log(value);
+    if (value == null && value != "true" )
+      isOk = confirm("Hi, this site is being building in angular, and comming soon will be on a stable version. \n\n If you don't want see this message again please click on agree. \n\n Thanks for visit.");
+    
+    if (isOk)
+      localStorage.setItem("visited","true");
+  }
 
   /** Based on the screen size, switch from standard to one column per row */
   // cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
@@ -45,11 +56,11 @@ export class HomeComponent {
   //   })
   // );
 
-  constructor(private breakpointObserver: BreakpointObserver) {
-    console.log(this.funcs.newID());
-    var xd = "does";
-    console.log(xd == "does");
 
+
+  constructor(private breakpointObserver: BreakpointObserver) {
+    console.log(this.funcs.newID());    
+    this.presentation();
   }
 
   toggle(card: any, paragraph: string, bodyCard: string) {

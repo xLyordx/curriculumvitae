@@ -318,8 +318,16 @@ class HomeComponent {
             { title: this.lang.title, class: 'col-lg-6 col-md-6 col-sm-12 col-xs-12', content: '', tag: 'lang', expanded: false }
         ];
         console.log(this.funcs.newID());
-        var xd = "does";
-        console.log(xd == "does");
+        this.presentation();
+    }
+    presentation() {
+        let isOk = false;
+        let value = localStorage.getItem("visited");
+        console.log(value);
+        if (value == null && value != "true")
+            isOk = confirm("Hi, this site is being building in angular, and comming soon will be on a stable version. \n\n If you don't want see this message again please click on agree. \n\n Thanks for visit.");
+        if (isOk)
+            localStorage.setItem("visited", "true");
     }
     toggle(card, paragraph, bodyCard) {
         var eChange;
