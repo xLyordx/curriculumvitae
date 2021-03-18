@@ -506,7 +506,7 @@ var skills = {
     officeTools: ["Microsoft Excel", "Microsoft Word", "Microsoft Power Point"]
 };
 const ɵ0 = [
-    new _Language__WEBPACK_IMPORTED_MODULE_3__["Language"]("English", "B2"),
+    new _Language__WEBPACK_IMPORTED_MODULE_3__["Language"]("English", "B1"),
     new _Language__WEBPACK_IMPORTED_MODULE_3__["Language"]("Spanish", "Native")
 ];
 var Languages = {

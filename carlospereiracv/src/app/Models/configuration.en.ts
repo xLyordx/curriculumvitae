@@ -63,7 +63,7 @@ export var skills = {
 export var Languages = {
     title: "Language",
     data: [
-        new Language("English", "B2"),
+        new Language("English", "B1"),
         new Language("Spanish", "Native")
     ]
 };
