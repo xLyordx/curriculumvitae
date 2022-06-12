@@ -4,7 +4,7 @@
     "description": "this is my cv",
     "main": "app.js",
     "scripts": {
-        "test": "jest",
+        "test": "mocha",
         "start": "node app"
     },
     "keywords": [],
